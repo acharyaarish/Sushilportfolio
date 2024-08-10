@@ -1,98 +1,67 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
+/* Custom styles */
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.experience,
+.education {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn-hover-effect:hover {
+  border: 10px;
+  background-color: #000000;
+  color: #fff;
+  border-color: #004085;
+  cursor: pointer;
+}
+.card-hover-effect:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  margin: 0px;
 }
 
-header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 1em 0;
+.contact-form-container {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-section {
-    max-width: 800px;
-    margin: 2em auto;
-    padding: 1.5em;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.contact-form-container h2 {
+  margin-bottom: 20px;
 }
-
-h1, h2, h3 {
-    color: #000000;
-    transition: color 0.3s ease;
+.form-control:focus {
+  box-shadow: none;
+  border-color: #007bff;
 }
-
-h1:hover, h2:hover, h3:hover {
-    color: #e74c3c; /* Change to your desired hover color */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
 }
-
-li {
-    margin-bottom: 0.5em;
+.form-message {
+  display: none;
+  margin-top: 20px;
 }
-
-p {
-    margin: 0;
+.form-message.success {
+  color: #28a745;
 }
-
-.education:hover, .experience:hover, .skills:hover, .contact:hover,.certifications:hover{
- 
-    margin-bottom: 2em;
-    background-color: #2980b9; /* Change to your desired hover color */
-    transform: scale(1.1);
-}
-.read-more {
-    position: absolute;
-    align-items:right;
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    border-radius: 7px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-
-/* Media Queries for responsiveness */
-@media screen and (max-width: 600px) {
-    section {
-        padding: 1em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    h1, h2, h3 {
-        font-size: 1.5em;
-    }
-}
-/*For profile image*/
-.logo {
-    max-width: 100px; /* Adjust the max-width as needed */
-    height: auto;
-    border-radius: 20px;
-    margin-right: 10px; /* Add spacing between the logo and text */
-}
-.certificate{
-    max-width: 200px;
-}
-.logo:hover{
-
-    border-radius: 50px;
-}
-.logo-contact,.fa-brands:hover,.fa-solid:hover{
-    max-width: 400px; /* Increase the max-width for a larger logo */
-    height: auto;
-    margin-right: 10px;
-    transform: scale(1.7);
-    padding: 30rem,0rem;
-    cursor: pointer;
+.form-message.error {
+  color: #dc3545;
 }
