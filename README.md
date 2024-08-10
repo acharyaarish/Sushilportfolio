@@ -18,13 +18,15 @@ Coles Supermarkets
 As a Customer Service Agent at Coles, I excelled in providing exceptional service to customers. Responsibilities included addressing inquiries, resolving issues, and ensuring a positive shopping experience. I consistently demonstrated effective communication skills, patience, and a customer-centric approach, contributing to a positive and welcoming environment for both customers and colleagues.
 **
 Skills**
+
 Facilitating clear communication among team members and end-users
 Resolving client issues to meet their needs
 Managing multiple tasks simultaneously
 Overseeing administrative duties
-Utilizing Amazon as a cloud service
+Utilizing Amazon Web Services(AWS) as a cloud service
 Creating and executing user support and system training initiatives in collaboration with the team.
 **Certifications**
 Ongoing AWS Cloud Practicioner
 **Contact Information**
+
     
